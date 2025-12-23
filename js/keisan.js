@@ -1,11 +1,4 @@
-// ============================================
-// Wage Calculator - Beginner-Friendly Code
-// ============================================
 
-// ============================================
-// Function 1: Automatically format time input field
-// ============================================
-// This function automatically converts user input
 // to "HH:MM" format (example: 09:00)
 function formatTimeInput(inputElement) {
     // Save current cursor position
@@ -54,9 +47,8 @@ function formatTimeInput(inputElement) {
     inputElement.setSelectionRange(newCursorPosition, newCursorPosition);
 }
 
-// ============================================
 // Function 2: Execute when page is loaded
-// ============================================
+
 // This function sets up event listeners for time input fields
 // after the page has fully loaded
 document.addEventListener('DOMContentLoaded', function() {
@@ -102,9 +94,9 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-// ============================================
+
 // Function 3: Convert time string (HH:MM) to decimal hours
-// ============================================
+
 // Example: "09:30" → 9.5 hours (9 hours 30 minutes = 9.5 hours)
 function timeToDecimal(timeString) {
     // Split by colon to get hours and minutes
@@ -135,9 +127,8 @@ function timeToDecimal(timeString) {
     return decimalHours;
 }
 
-// ============================================
 // Function 4: Check if time format is correct
-// ============================================
+
 // Check if it's in 24-hour format (00:00 to 23:59)
 function validateTimeFormat(timeString) {
     // Regular expression pattern: HH:MM format (00:00 to 23:59)
@@ -152,9 +143,8 @@ function validateTimeFormat(timeString) {
     return isValid;
 }
 
-// ============================================
 // Function 5: Calculate wage (main function)
-// ============================================
+
 function calculateWage() {
     // Step 1: Get values from input fields
     let baseWageInput = document.getElementById('baseWage').value;
