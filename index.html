@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>時給計算機</title>
+</head>
+<body>
+    <div id="keisanbox">
+
+    <div class="header">
+      <h1>時給計算したい人！</h1>
+      <img src="image/pose_kyosyu_girl.png" alt="手を上げる" class="te">
+     </div>
+
+
+    <div class="calculator">
+    <label for="baseWage">時給 (円):</label>
+    <input type="text" id="baseWage" placeholder="例: 1200"><br>
+
+    <label for="startTime">開始時間:</label>
+    <input type="text" id="startTime" placeholder="例: 09:00" maxlength="5" pattern="[0-9]{2}:[0-9]{2}"><br>
+
+    <label for="endTime">終了時間:</label>
+    <input type="text" id="endTime" placeholder="例: 17:30" maxlength="5" pattern="[0-9]{2}:[0-9]{2}"><br>
+
+    <button onclick="calculateWage()" class="kekkabtn">計算する</button>
+</div>
+
+<h3>計算結果:</h3>
+<div id="result"></div>
+
+
+    </div>
+    <script src="js/keisan.js"></script>
+
+    <footer>
+    &copy; 2025 Aakash Deep. All rights reserved.
+</footer>
+
+</body>
+</html>
